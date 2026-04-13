@@ -1,90 +1,157 @@
-🧠 Academic Project Selection System (ProjectVault)
-👥 Authors
-Your Name
-(Add your teammates if any)
-🚀 Implementation
+# 🎓 ProjectVault – Academic Project Selection System
 
-Academic Project Selection System is a full-stack web application that helps institutions manage, validate, and track student project submissions using AI and NLP techniques.
+## 👥 Authors
 
-📌 Overview
+* L.Sivamani(Y22ACS489)
+* K.Y.Sai Sandeep(L23ACS604)
+* M.Gayathri(Y22ACS502)
+* Y.Vamsi Krishna(Y22ACS595)
 
-The system is designed to eliminate duplicate project submissions and improve the quality of academic projects through intelligent validation.
+---
 
-It uses advanced technologies to analyze project content based on:
+## 🚀 Implementation
 
-Natural Language Processing (NLP)
-Machine Learning similarity detection
-AI-based validation using LLM
-🔗 GitHub Repositories
-Backend: https://github.com/Bujji2801/Academic-Project-Selection-backend
-Frontend: https://github.com/Bujji2801/Academic-Project-Selection-frontend
-🛠️ Technologies Used
-🔹 Backend
-Python
-FastAPI
-PostgreSQL
-SQLAlchemy
-spaCy (NLP)
-Scikit-learn (TF-IDF, Cosine Similarity)
-Groq API (AI Validation)
-🔹 Frontend
-React
-Vite
-Tailwind CSS
-Axios
-⚙️ Features
-📌 Project submission and management
-🔍 NLP-based similarity detection (TF-IDF + cosine similarity)
-🤖 AI-based project validation and feedback
-👥 Role-based access (Student, Guide, Admin)
-📊 Dashboard with project status tracking
-🔐 Secure authentication using JWT
-📈 Real-time feedback on project quality
-🧩 System Architecture
-Frontend: React (Vercel)
-Backend: FastAPI (Render)
-Database: PostgreSQL
-AI/NLP: spaCy + Groq API
-📂 Project Structure
-Backend
+ProjectVault is a full-stack web application designed to manage, validate, and track academic project submissions using **Natural Language Processing (NLP)** and **Artificial Intelligence (AI)**.
+
+---
+
+## 📌 Overview
+
+The Academic Project Selection System helps institutions streamline project submission and evaluation by preventing duplicate projects and improving project quality.
+
+The system analyzes project content using:
+
+* NLP-based similarity detection
+* AI-based validation
+* Role-based project management
+
+---
+
+## 🛠️ Technologies Used
+
+### 🔹 Backend
+
+* Python
+* FastAPI
+* PostgreSQL
+* SQLAlchemy
+* spaCy (NLP)
+* Scikit-learn (TF-IDF, Cosine Similarity)
+* Groq API (LLM-based validation)
+
+### 🔹 Frontend
+
+* React (Vite)
+* Tailwind CSS
+* Axios
+* React Router
+
+---
+
+## ⚙️ Features
+
+* 📄 Project submission and management
+* 🔍 NLP-based similarity detection (duplicate checking)
+* 🤖 AI-powered project validation and feedback
+* 🔐 Role-based access control (Student / Guide / Admin)
+* 📊 Dashboard with project status tracking
+* 📝 Review and approval system
+* ⚡ Real-time feedback on project quality
+
+---
+
+## 📂 Project Structure
+
+### Backend
+
+```
 backend/
  ├── main.py
  ├── database.py
  ├── nlp_engine.py
  ├── ai_validator.py
  ├── routes/
+ │    ├── auth.py
+ │    ├── projects.py
+ │    └── reviews.py
  └── requirements.txt
-Frontend
+```
+
+### Frontend
+
+```
 frontend/
  ├── src/
- │   ├── pages/
- │   ├── components/
- │   ├── context/
- │   └── utils/
+ │    ├── pages/
+ │    ├── context/
+ │    ├── utils/
+ │    └── main.jsx
  └── package.json
-🔮 Future Work
-📊 Improve NLP accuracy using advanced models
-🌍 Multilingual project analysis
-📱 Mobile application support
-📈 Advanced analytics dashboard
-🤖 Enhanced AI feedback using latest LLMs
-📎 Usage
-Run Backend
+```
+
+---
+
+## ⚙️ Setup & Installation
+
+### 🔹 Backend Setup
+
+```bash
+cd backend
+pip install -r requirements.txt
 uvicorn main:app --reload
-Run Frontend
+```
+
+### 🔹 Frontend Setup
+
+```bash
+cd frontend
 npm install
 npm run dev
+```
 
-Open browser:
+---
 
-http://localhost:5173
-📊 Output
+## 🌐 Usage
+
+1. Open the frontend in browser
+2. Register/Login as Student/Guide/Admin
+3. Submit a new project
+4. System performs:
+
+   * AI validation
+   * NLP similarity check
+5. View results on dashboard
+
+---
+
+## 📊 Output
 
 The system provides:
 
-✔ Similarity score (0–100%)
-✔ AI-based feedback on project quality
-✔ Project status (Pending / Approved / Rejected)
-📌 Conclusion
+* ✅ Similarity Score (0–100%)
+* 🤖 AI Validation Feedback
+* 📌 Project Status (Pending / Approved / Rejected)
 
-This project provides an intelligent solution for academic institutions by integrating NLP-based similarity detection and AI validation, ensuring originality, improving project quality, and streamlining the project evaluation process.
+---
+
+## 🔮 Future Work
+
+* 📈 Improve similarity accuracy using deep learning models
+* 🌍 Multilingual project analysis
+* 📊 Advanced analytics dashboard
+* 🔗 Integration with institutional databases
+
+---
+
+## 📎 GitHub Repositories
+
+* Backend: https://github.com/Bujji2801/Academic-Project-Selection-backend.git
+* Frontend: https://github.com/Bujji2801/Academic-Project-Selection-frontend.git
+
+---
+
+## 📌 Conclusion
+
+ProjectVault provides an intelligent solution for academic project management by integrating NLP and AI techniques. It helps reduce duplicate submissions, improves project quality, and streamlines the evaluation process.
+
+---
